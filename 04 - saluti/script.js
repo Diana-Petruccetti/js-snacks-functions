@@ -2,12 +2,11 @@
 
 const name = 'Mario';
 
-
 // Dichiara la funzione qui.
-
+const greetings = name => `Ciao ${name}`;
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(greetings('Diana'));
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
