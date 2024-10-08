@@ -9,10 +9,24 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-
+function greetings(name){
+    let greet;
+    //recupero l'ora attuale e la salvo in una variabile
+    let ora = new Date().getHours()
+    console.log(ora);
+    //in base all'ora cambiare il saluto
+    if(ora < 12){
+        greet = 'Buongiorno'
+    } else if (ora < 18){
+        greet = 'Buon pomeriggio'
+    } else {
+        greet = 'Buonasera'
+    }
+    return `${greet} ${name}`
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
-
+console.log(greetings(name));
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
+
